@@ -54,7 +54,8 @@ namespace modul8_103022300121
                 Console.WriteLine($"{i} {data}");
                 i++;
             }
-            Console.WriteLine(_config.lang == "en" ? $"Please type {_config.confirmation.en} to confirm the transaction:" : $"Ketik {_config.confirmation.id} untuk mengkonfirmasi transaksi:");
+            Console.WriteLine(_config.lang == "en" ? $"Please type {_config.confirmation.en} to confirm the transaction:" : 
+                $"Ketik {_config.confirmation.id} untuk mengkonfirmasi transaksi:");
             string answare = Console.ReadLine();
 
             if (_config.lang == "en" && answare == "yes" || _config.lang == "id" && answare == "ya")
